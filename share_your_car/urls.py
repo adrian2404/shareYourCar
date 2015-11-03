@@ -16,6 +16,9 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
+#patterns function is needed??
 urlpatterns = [
+    url(r'^$', 'shareyourcar.views.demo_view', name="home"),
     url(r'^admin/', include(admin.site.urls)),
+
 ]
